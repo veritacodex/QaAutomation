@@ -14,7 +14,7 @@ public class Program
         var output = new StringBuilder();
         dynamic root = JsonConvert.DeserializeObject(json);
         CBTHelper.PrintContract(root, 0, output);
-        File.WriteAllText(@"C:\Users\PerezJA\Documents\outputContractGen.txt", output.ToString());
+        File.WriteAllText(@"C:\Users\UserA\Documents\outputContractGen.txt", output.ToString());
         Console.WriteLine("Contract generated");
     }
 }
