@@ -10,7 +10,7 @@ public class Program
 {
     public static void Main()
     {
-        var json = File.ReadAllText(@"C:\Testing\repositories\tribe-bl-area-lo-bf-offer-bf-delivery\Pledge\Pledge _Company Assets_Inventory_Claim");
+        var json = File.ReadAllText(@"jsonfile");
         var output = new StringBuilder();
         dynamic root = JsonConvert.DeserializeObject(json);
         CBTHelper.PrintContract(root, 0, output);
