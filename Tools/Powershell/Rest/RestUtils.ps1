@@ -16,7 +16,7 @@ function RestQuery {
     [hashtable]$headers = @{}
     $headers.Add('Content-Type', 'application/json')
     $body = Get-Content './body.json'
-    $queryResponse = Invoke-WebRequest -Uri 'https://ncus-offer-letter-service-dev.apps.cfd06.rabobank.nl/offerletter/?ReportCode=R060&BankCode=1108&UserId=SonaliSA' -Method 'POST' -Body $body -Headers $headers 
+    $queryResponse = Invoke-WebRequest -Uri 'https://' -Method 'POST' -Body $body -Headers $headers 
     Write-Host $queryResponse
 
 
