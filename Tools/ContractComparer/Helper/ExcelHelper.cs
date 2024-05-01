@@ -11,7 +11,7 @@ public class ExcelHelper
 {
     public static void SaveToCSV(DataGrid dataGrid)
     {
-        var filePath = @"C:\Users\PerezJA\Documents\output.csv";
+        var filePath = @"C:\Users\UserA\Documents\output.csv";
         CreateCsvfile(dataGrid, filePath);
         Process.Start(@"C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE", filePath);
     }
